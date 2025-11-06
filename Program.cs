@@ -10,7 +10,7 @@ app.Use(async (context, next) =>
 });
 
 app.UseRewriter(new RewriteOptions().AddRedirect("history", "about"));
-app.MapGet("/", () => "I changed This for Github!");
+app.MapGet("/", () => "Welcome To Contoso!");
 app.MapGet("/about", () => "Contoso was founded in 2000.");
 
 
